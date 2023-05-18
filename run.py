@@ -15,6 +15,17 @@ def displayWelcomeMessage ():
     """
     print ("Welcome to the interactive Tic Tac Toe game")
 
+def print_board (self):
+    """
+    Prints the current state of the game board
+    """
+    print ("   0   1   2")
+    for row in range (3):
+        print (f"{row} " + " | ".join (self.board [row]))
+        if row < 2:
+            print ("  ---+---+---")
+
+
 
 
 
