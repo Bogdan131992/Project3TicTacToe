@@ -65,7 +65,7 @@ def main():
     The game continues until there is a winner or a tie.
     """
     print("Welcome to the interactive Tic Tac Toe game")
-    print("Your move shoul contain two numbers (row [space] column)")
+    print("Your move should contain two numbers (row [space] column)")
     game = TicTacToeGame()
 
     while True:
