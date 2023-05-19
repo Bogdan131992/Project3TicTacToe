@@ -1,32 +1,91 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tic-Tac-Toe Game
 
-Welcome,
+![img](readmeimg/responsive.png)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+## 1 Purpose of the project
 
-## Reminders
+This is a Python implementation of the classic game Tic-Tac-Toe. The game allows two players to take turns entering their moves and updates the game board accordingly. The players are represented by "X" and "O". The game continues until there is a winner or a tie.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### Usage
 
-## Creating the Heroku app
+To play the game, follow these steps:
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+1. Run the `main()` function.
+2. The game will display an empty 3x3 grid representing the game board.
+3. Players will be prompted to enter their moves. Each move should contain two numbers, representing the row and column of the desired position on the board.
+4. The game validates the input and checks if the move is valid. If the move is not valid (e.g., out of bounds or the position is already occupied), an error message will be displayed, and the player will be prompted to enter a new move.
+5. The game updates the board with the player's move and checks if there is a winner or a tie.
+6. If there is a winner, the game displays the winning player and ends.
+7. If there is a tie, the game displays a tie message and ends.
+8. If there is no winner yet, the game switches the current player and continues to the next turn.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## 2 User Stories
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+The following user stories describe the functionality of the Tic-Tac-Toe game:
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+- As a player, I want to see the current state of the game board, so I know where to make my move.
 
-Connect your GitHub repository and deploy as normal.
+  ![img](readmeimg/userwelcome.png)
 
-## Constraints
+- As a player, I want to be able to input my move by specifying the row and column, so I can place my symbol on the board.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+  ![img](readmeimg/user1.png)
 
----
+- As a player, I want the game to validate my move and display an error message if it is not valid, so I can enter a valid move.
 
-Happy coding!
+  ![img](readmeimg/uservalid.png)
+
+- As a player, I want the game to check if there is a winner after each move, so I know if I have won the game.
+
+  ![img](readmeimg/userwin.png)
+
+- As a player, I want the game to check for a tie if there are no more valid moves, so I know if the game ended in a tie.
+
+  ![img](readmeimg/usertie.png)
+
+## 3 Features
+
+- Interactive game board: The current state of the game board is displayed after each move, allowing players to see the positions and plan their next moves accordingly.
+- Input validation: The game validates the player's move and checks if it is a valid position on the board. If the move is not valid (e.g., out of bounds or the position is already occupied), an error message is displayed, and the player is prompted to enter a new move.
+- Win condition check: After each move, the game checks if there is a winner. It examines the rows, columns, and diagonals to determine if a player has achieved three in a row. If a winner is found, the game ends and displays the winning player.
+- Tie condition check: If there are no more valid moves and no winner has been determined, the game checks for a tie. If all positions on the board are occupied and no player has won, the game ends and displays a tie message.
+- Interruption handling: Players can interrupt the game at any time by pressing Ctrl+C (KeyboardInterrupt). The game gracefully handles the interruption and displays a message before exiting.
+- Clear and informative messages: The game provides clear and informative messages throughout the gameplay, guiding the players and providing feedback on the game flow and any errors that occur.
+
+## 4 Technologies Used
+
+- Heroku
+- Python 3
+- GitPod
+- GitHub
+- Visual Studio
+
+## 5. Testing
+
+1. As a developer, I want to test the game's behavior when a valid move is made, to ensure the board is updated correctly.
+
+2. As a developer, I want to test the game's behavior when an invalid move is made, to ensure appropriate error messages are displayed.
+
+3. As a developer, I want to test the game's behavior when a player wins, to ensure the correct winning message is displayed.
+
+4. As a developer, I want to test the game's behavior when there is a tie, to ensure the tie message is displayed.
+5. As a developer, I want to test the game's interruption handling, to ensure the game exits gracefully when interrupted.
+6. As a developer, I want to test the game's output messages, to ensure they are clear, informative, and displayed at the right time.
+7. As a developer, I want to test the game's initialization, to ensure the board is set up correctly and the starting player is "X".
+
+### CI Python Linter
+
+![img](readmeimg/pepvalid.png)
+
+### Lighthouse Test
+
+![img](readmeimg/validlight.png)
+
+## 6. Deployment
+
+- [Github](https://github.com/Bogdan131992/Project3TicTacToe)
+- [Heroku - live link](https://project3tictactoe.herokuapp.com/)
+
+## 7. Credits
+
+- The check winners check function is similar to the example presented in this [Github project](https://gist.github.com/jason-feng/670dc37907ff54af4728)
