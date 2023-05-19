@@ -2,8 +2,8 @@ class TicTacToeGame:
     def __init__(self):
         """
         Initializes a new instance of the TicTacToe class.
-
-        The board is represented as a 3x3 grid, initially filled with empty spaces.
+        The board is represented as a 3x3 grid,
+        initially filled with empty spaces.
         The current player is set to "X" to start the game.
         """
         self.board = [[" " for _ in range(3)] for _ in range(3)]
@@ -22,7 +22,8 @@ class TicTacToeGame:
     def check_winner(self):
         """
         Checks if there is a winner in the current game board.
-        Returns: str or None: The winning player ("X" or "O"), "Tie" for a tie, or None if there is no winner yet.
+        Returns: str or None: The winning player ("X" or "O"),
+        "Tie" for a tie, or None if there is no winner yet.
         """
         # Check rows
         for row in self.board:
@@ -51,18 +52,18 @@ class TicTacToeGame:
 def main():
     """
     Plays a game of Tic-Tac-Toe.
-
-    This function allows two players to take turns entering their moves and updates the game board accordingly.
+    This function allows two players to take turns
+    entering their moves and updates the game board accordingly.
     The players are represented by "X" and "O".
     The game continues until there is a winner or a tie.
     """
-    print ("Welcome to the interactive Tic Tac Toe game\n")
+    print("Welcome to the interactive Tic Tac Toe game")
     game = TicTacToeGame()
 
     while True:
         game.print_board()
         try:
-            move = input(f"Player {game.current_player}, enter your move (two integers separated by a space for row and column): ")
+            move = input(f"Player {game.current_player}, enter your move (row [space] column): ")
             row, col = map(int, move.split())
 
             if not (0 <= row <= 2 and 0 <= col <= 2):
