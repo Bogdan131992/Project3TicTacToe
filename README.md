@@ -55,7 +55,7 @@ The following user stories describe the functionality of the Tic-Tac-Toe game:
 ## 4 Technologies Used
 
 - Heroku
-- Python 3
+- Python
 - GitPod
 - GitHub
 - Visual Studio
@@ -77,13 +77,48 @@ The following user stories describe the functionality of the Tic-Tac-Toe game:
 
 ![img](readmeimg/pepvalid.png)
 
-### Lighthouse Test
 
-![img](readmeimg/validlight.png)
 
 ## 6. Deployment
 
-- [Github](https://github.com/Bogdan131992/Project3TicTacToe)
+### On Github:
+
+- The project was deployed on GitHub, after I created a new repository and wrote the program in Git Pod, I selected my project in Git Hub repository, after this I selected my project from the menu on the left.
+
+- Then I clicked on Settings and from the settings menu on the left I clicked on the Pages button
+
+- Then from the Branch section I chose "main".
+
+- At the end, I entered the domain name bogdan131992.github.io in Custom domain
+
+- I clicked on save.
+
+- I was informed that the deployment process was successful and I received a link for my website
+
+- [Github -Link](https://github.com/Bogdan131992/Project3TicTacToe)
+
+
+### On Gitpod:
+
+From the github page I select my project, then I click on Gitpod green button.
+- Then I selected New Workspace and then entered in the online programming environment.
+- From the menu on the left, I selected the option to create new files and created the necessary files for the project
+- In a folder I put all the necessary images that I downloaded from the Internet
+- I entered the command python -m http.server in the terminal to open a live server
+- To save the changes, I entered the git add command in the terminal
+- Also I used in the terminal  git commit -m "" to commit the changes 
+- And then to push the changes to Github I used the git push command in the terminal.
+
+
+### On Heroku:
+
+- From the Heroku dashboard  we’ll click the “Create new app” button here then go to the deploy section.  
+ - And here we can choose our deployment method.
+-  Confirm that we want to connect to Github and  search for Github repository name,  
+- And then we can click “connect”  to link up our Heroku app to our  Github repository code. 
+- Then  you can choose to  manually deploy using this deploy branch option here.  
+-  Finally we see the “App was  successfully deployed” message  
+and a button to take us to our deployed  link.
 - [Heroku - live link](https://project3tictactoe.herokuapp.com/)
 
 ## 7. Credits
