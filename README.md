@@ -62,16 +62,23 @@ The following user stories describe the functionality of the Tic-Tac-Toe game:
 
 ## 5. Testing
 
-1. As a developer, I want to test the game's behavior when a valid move is made, to ensure the board is updated correctly.
+- This game is for two players who have to enter either X or O in turn.
+- When the game starts, players are informed that they must enter a move composed of two numbers with a space between them. The board is displayed, which has nine empty boxes. Each box has two indexes, one for the row from top to bottom, the other for the column from left to right.
+- Below the game board is displayed which player must enter the move, player X or player O. 
 
-2. As a developer, I want to test the game's behavior when an invalid move is made, to ensure appropriate error messages are displayed.
+![img](readmeimg/teststart.png)
 
-3. As a developer, I want to test the game's behavior when a player wins, to ensure the correct winning message is displayed.
+- When the player enters data, they are checked if they are correct, if the data entered are not two whole numbers between zero and two separated by a space, the player is informed that he entered the data incorrectly.
 
-4. As a developer, I want to test the game's behavior when there is a tie, to ensure the tie message is displayed.
-5. As a developer, I want to test the game's interruption handling, to ensure the game exits gracefully when interrupted.
-6. As a developer, I want to test the game's output messages, to ensure they are clear, informative, and displayed at the right time.
-7. As a developer, I want to test the game's initialization, to ensure the board is set up correctly and the starting player is "X".
+![img](readmeimg/testvalidation.png)
+
+- If one of the players manages to fill a line, a column or a diagonal with the elements he is playing with (X or O) then he becomes the winner. And this is indicated by a message displayed below the game board.
+
+![img](readmeimg/testwincolumn.png)![img](readmeimg/testwindiag.png)![img](readmeimg/testwinline.png)
+
+- If none of the players manage to make a line, column or diagonal then there will be a tie.
+
+![img](readmeimg/usertie.png)
 
 ### CI Python Linter
 
