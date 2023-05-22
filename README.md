@@ -68,9 +68,9 @@ The following user stories describe the functionality of the Tic-Tac-Toe game:
 
 ![img](readmeimg/teststart.png)
 
-- When the player enters data, they are checked if they are correct, if the data entered are not two whole numbers between zero and two separated by a space, the player is informed that he entered the data incorrectly.
+- When the player enters data, they are checked if they are correct, if the data entered are not two whole numbers between zero and two separated by a space, or if is a move already entered, the player is informed that he entered the data incorrectly.
 
-![img](readmeimg/testvalidation.png)
+![img](readmeimg/testvalidation.png) ![img](readmeimg/testocupied.png)
 
 - If one of the players manages to fill a line, a column or a diagonal with the elements he is playing with (X or O) then he becomes the winner. And this is indicated by a message displayed below the game board.
 
